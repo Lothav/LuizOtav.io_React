@@ -4,7 +4,7 @@ npm run build &&
 git commit -am "$1" &&
 git push origin master &&
 
-mv -f ./build/* ../LuizOtav.io/ &&
+mv -ft ./build/* ../LuizOtav.io/ &&
 rm -r ./build &&
 
 cd ../LuizOtav.io &&
