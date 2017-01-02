@@ -43,10 +43,6 @@
   margin-top: 10px;
 }
 
-.App-header .box-header{
-  display: flex;
-}
-
 .App-intro {
   font-size: large;
 }
@@ -165,15 +161,6 @@ html, body {
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;
-}
-
-.find-me-text{
-  text-align: center;
-  vertical-align: middle;
-  color: white;
-  font-size: 15px;
-  line-height: 27px;
-  margin: 15px;
 }
 
 .pic-box{
@@ -498,8 +485,7 @@ svg.paint_god path {
 }
 
 .bounceInDown{
-  padding: 0 10px;
-
+  padding: 0 3px;
 }
 
 @keyframes bounce {

@@ -1,0 +1,12 @@
+.find-me {
+    display: flex;
+}
+
+.find-me-text{
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 15px;
+    line-height: 27px;
+    margin: 15px;
+}
