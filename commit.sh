@@ -3,6 +3,7 @@
 npm run build &&
 git commit -am "$1" &&
 git push origin master &&
+cp -f ./index.html ../LuizOtav.io/ &&
 cp -rf ./build/* ../LuizOtav.io/ &&
 rm -r ./build &&
 cd ../LuizOtav.io &&
