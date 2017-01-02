@@ -38,6 +38,15 @@
   color: white;
 }
 
+.App-header img{
+  height: 30px;
+  margin-top: 10px;
+}
+
+.App-header .box-header{
+  display: flex;
+}
+
 .App-intro {
   font-size: large;
 }
@@ -161,8 +170,9 @@ html, body {
 .find-me-text{
   text-align: center;
   vertical-align: middle;
-  font-size: 25px;
   color: white;
+  font-size: 15px;
+  line-height: 27px;
   margin: 15px;
 }
 
