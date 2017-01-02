@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MePhoto from './mePhoto/MePhoto';
-import Description from './description/Description';
 import logo from './assets/logo.svg';
 import hearth from "./assets/hearth.png";
 import FindMe from "./findMe/FindMe";
@@ -41,7 +40,6 @@ class App extends Component {
                 </div>
                 <div style={{height:"100px"}}></div>
                 <MePhoto />
-                <Description />
                 <div style={{height:"100px"}}></div>
                 <div className="built-with-love-and-react-box">
                     <div className="built-with-love-and-react">
