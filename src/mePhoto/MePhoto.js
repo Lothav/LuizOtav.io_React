@@ -18,7 +18,7 @@ class MePhoto extends Component{
     handleLoad () {
         setTimeout(()=>{ //@TODO fix this time out svg loaded
             this.setState({loaded: true});
-        },1000);
+        },100000);
     }
 
     render() {
