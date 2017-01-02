@@ -18,20 +18,19 @@ class MePhoto extends Component{
     handleLoad () {
         setTimeout(()=>{ //@TODO fix this time out svg loaded
             this.setState({loaded: true});
-        },100000);
+        },1000);
     }
 
     render() {
-        console.log(this.state.loaded);
         return this.state.loaded ? (
             <div>
                 <ReactSVG
                     path={ photo }
-                    callback={ (svg) =>{
+                    callback = { (svg) =>{
                         let paths = svg.querySelectorAll("path");
                         let animation_dur = 1;
                         for(let i in paths) {
-                            if(paths.hasOwnProperty(i)){
+                            if(paths.hasOwnProperty(i)) {
                                 let animations = ["rotate-n", "tada", "zoomInDown", "rubberBand"];
                                 let random = Math.floor(Math.random() * animations.length);
                                 paths[i].style.animation = animations[random]  +" "+animation_dur+"s" ;
