@@ -4,7 +4,7 @@
     text-align: center;
     top: 47vh;
     position: absolute;
-    right: 45vw;
+    right: calc(50vw - 35px);
 }
 
 .spinner > div {
