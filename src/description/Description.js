@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./Description.css";
+import Typist from 'react-typist';
 
 class Description extends Component {
 
@@ -43,7 +44,9 @@ class Description extends Component {
                             <i className="fa fa-code faa-wrench" />
                         </div>
                         <div className="icon-box-label">
-                            Full-stack Web Developer
+                            <Typist>
+                                Full-stack Web Developer
+                            </Typist>
                         </div>
                     </div>
                     <div className="icon-box-out">
