@@ -11,7 +11,7 @@ class FindMe extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { social: ["none","none","none","none","none"] };
+        this.state = { social: ["none","none","none","none","none"], isLoad : false, load_count: 0 };
     }
 
     componentDidMount() {
@@ -26,10 +26,25 @@ class FindMe extends Component {
                 ]});
             }, 250*i);
         }
+        let imgs = [facebook, github, linkedin, livecoding, wow];
+        for(let i = 0; i< 5; i++){
+            this.imgLoad(imgs[i]);
+        }
+    }
+
+    imgLoad(img_src){
+        let img = new Image();
+        img.onload = () => {
+            this.state.load_count++;
+            if(this.state.load_count === 5){
+                this.setState({isLoad : true });
+            }
+        };
+        img.src =  img_src;
     }
 
     render() {
-        return(
+        return this.state.isLoad ? (
             <div className="find-me">
                 <div className="find-me-text animated infinite flash">
                     <span>Find Me</span>
@@ -60,7 +75,7 @@ class FindMe extends Component {
                     </a>
                 </div>
             </div>
-        )
+        ) : (<div></div>);
     }
 }
 
