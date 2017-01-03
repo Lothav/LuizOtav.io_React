@@ -3,15 +3,26 @@ import "./Description.css";
 
 class Description extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {isLoad : false};
+    }
+
     getAge(){
         let birthday = new Date("07-06-1994");
         let ageDifMs = Date.now() - birthday.getTime();
         let ageDate = new Date(ageDifMs); // miliseconds from epoch
         return Math.abs(ageDate.getUTCFullYear() - 1970);
     }
+    
+    componentDidMount() {
+        setTimeout(()=>{
+            this.setState({isLoad : true});
+        },1000);
+    }
 
     render(){
-        return(
+        return this.state.isLoad ? (
             <div className="description-box">
                 <div className="animated tada my-name" style={{width: "100%"}}>
                     <div className="animated rubberBand">
@@ -53,7 +64,7 @@ class Description extends Component {
                     </div>
                 </div>
             </div>
-        );
+        ) : (<div></div>);
     }
 }
 

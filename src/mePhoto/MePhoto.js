@@ -26,7 +26,7 @@ class MePhoto extends Component{
             <div>
                 <ReactSVG
                     path={ photo }
-                    callback = { (svg) =>{
+                    callback={ (svg) =>{
                         let paths = svg.querySelectorAll("path");
                         let animation_dur = 1;
                         for(let i in paths) {
