@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family:"PressStart";
+    src: url("../assets/fonts/pressstart.ttf");
+}
+
 .description-box{
     margin-top: 5vh;
 }
@@ -23,4 +29,9 @@
 .icon-box-out{
     display: flex;
     line-height: 50px;
+}
+
+.my-name{
+    font-size: 55px;
+    font-family: 'PressStart', sans-serif !important;
 }

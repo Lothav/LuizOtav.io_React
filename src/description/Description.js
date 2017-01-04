@@ -27,7 +27,7 @@ class Description extends Component {
             <div className="description-box">
                 <div className="animated tada my-name" style={{width: "100%"}}>
                     <div className="animated rubberBand">
-                        <span>Luiz Otávio</span>
+                        <div>Luiz Otávio</div>
                     </div>
                 </div>
                 <div className="description-box--ins">

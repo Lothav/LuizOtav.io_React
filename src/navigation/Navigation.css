@@ -3,8 +3,6 @@
     src: url("../assets/fonts/eddie.ttf");
 }
 
-
-
 .navigation-box {
     text-align: center;
     margin-top: 65px;
@@ -31,14 +29,11 @@ svg.animate path {
     stroke:#fff;
 }
 
-.me_photo_nav_svg:hover path{
+.navigation-box:hover * {
     stroke: #64B64D;
+    color: #64B64D !important;
 }
 
 .navigation-label {
     font-family: 'Eddie', sans-serif;
-}
-
-.navigation-label:hover{
-    color:#64B64D;
 }
