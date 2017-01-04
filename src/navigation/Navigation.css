@@ -29,9 +29,13 @@ svg.animate path {
     stroke:#fff;
 }
 
-.navigation-box:hover * {
+.navigation-item:hover * {
     stroke: #64B64D;
     color: #64B64D !important;
+}
+
+.navigation-item {
+    margin-bottom: 20px;
 }
 
 .navigation-label {
