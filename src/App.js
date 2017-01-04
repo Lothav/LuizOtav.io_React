@@ -38,9 +38,9 @@ class App extends Component {
                 <div className="App-header">
                     <FindMe />
                 </div>
-                <div style={{height:"100px"}}></div>
+                <div style={{height:"50px"}}></div>
                 <MePhoto />
-                <div style={{height:"100px"}}></div>
+                <div style={{height:"50px"}}></div>
                 <div className="built-with-love-and-react-box">
                     <div className="built-with-love-and-react">
                         Built with
