@@ -1,0 +1,29 @@
+.navigation-box {
+    text-align: center;
+    margin-top: 65px;
+    cursor: pointer;
+}
+
+svg.animate path {
+    animation: svg-animate 4s forwards infinite;
+}
+
+@keyframes svg-animate {
+    from {}
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.me_photo_nav_svg{
+    height: 60px;
+    width: auto;
+}
+
+.me_photo_nav_svg path{
+    stroke:#fff;
+}
+
+.me_photo_nav_svg:hover path{
+    stroke:green;
+}

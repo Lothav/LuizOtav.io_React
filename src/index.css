@@ -4,3 +4,15 @@ body {
   font-family: sans-serif;
   background: #222;
 }
+
+#nav{
+  position: fixed;
+  width: 100px;
+  background: #333;
+  height: 100vh;
+  top: 0;
+}
+
+#root{
+  padding-left: 100px;
+}

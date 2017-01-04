@@ -10,15 +10,25 @@ class MePhoto extends Component{
     constructor (props) {
         super(props);
         this.state = {loaded: false};
-        this.img = new Image();
-        this.img.onload = this.handleLoad.bind(this);
-        this.img.src = photo;
+        this.loaded_all = 0;
+
+        let img1 = new Image();
+        img1.onload = this.handleLoad.bind(this);
+        img1.src = photo;
+
+        let img2 = new Image();
+        img2.onload = this.handleLoad.bind(this);
+        img2.src = photo;
     }
 
     handleLoad () {
-        setTimeout(()=>{ //@TODO fix this time out svg loaded
-            this.setState({loaded: true});
-        },1000);
+        if(this.loaded_all){
+            setTimeout(()=>{ //@TODO fix this time out svg loaded
+                this.setState({loaded: true});
+            },1000);
+        }else{
+            this.loaded_all = true;
+        }
     }
 
     render() {
