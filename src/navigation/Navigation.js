@@ -23,7 +23,7 @@ class Navigation extends Component {
                          }
                      }}
                 />
-                <div>Games</div>
+                <div className="navigation-label">html5<br />Games</div>
             </div>
         );
     }
