@@ -9,10 +9,6 @@
     cursor: pointer;
 }
 
-svg.animate path {
-    animation: svg-animate 4s forwards infinite;
-}
-
 @keyframes svg-animate {
     from {}
     to {

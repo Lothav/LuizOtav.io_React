@@ -14,8 +14,8 @@ class Navigation extends Component {
         let paths = svg.querySelectorAll("path");
         for(let i in paths) {
             if(paths.hasOwnProperty(i)) {
-                let dur = Math.round(Math.random() * 10) + 1;
-                paths[i].animation = "svg-animate "+dur+"s forwards";
+                let dur = Math.round(Math.random() * 5) + 5;
+                paths[i].style.animation = "svg-animate "+dur+"s forwards infinite";
                 let round_len = Math.round(Number(paths[i].getTotalLength()));
                 paths[i].setAttribute('stroke-dasharray', round_len);
                 paths[i].setAttribute('stroke-dashoffset', round_len);
