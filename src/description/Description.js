@@ -6,7 +6,7 @@ class Description extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {isLoad : false};
+        this.state = {isLoad : false, isLoad_name : false};
     }
 
     getAge(){
@@ -15,21 +15,30 @@ class Description extends Component {
         let ageDate = new Date(ageDifMs); // miliseconds from epoch
         return Math.abs(ageDate.getUTCFullYear() - 1970);
     }
-    
+
     componentDidMount() {
         setTimeout(()=>{
             this.setState({isLoad : true});
         },1000);
+        setTimeout(()=>{
+            this.setState({isLoad_name : true});
+        },3000);
     }
 
     render(){
         return this.state.isLoad ? (
             <div className="description-box">
-                <div className="animated tada my-name" style={{width: "100%"}}>
-                    <div className="animated rubberBand">
-                        <div>Luiz Otávio</div>
-                    </div>
-                </div>
+                {
+                    (() => {
+                        return this.state.isLoad_name ? (
+                            <div className="animated tada my-name" style={{width: "100%"}}>
+                                <div className="animated rubberBand">
+                                    <div>Luiz Otávio</div>
+                                </div>
+                            </div>
+                        ) : (<div></div>);
+                    }).call(this)
+                }
                 <div className="description-box--ins">
                     <div className="icon-box-out">
                         <div className="icon-box">
