@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import me_svg from '../assets/eu_foto_draw.svg';
 import game_svg from '../assets/game.svg';
-import home_svg from '../assets/home.svg';
 import about_svg from '../assets/about.svg';
 import skills_svg from '../assets/skills.svg';
 
 import "./Navigation.css";
 import ReactSVG from 'react-svg';
+import MediaQuery from 'react-responsive';
 
 class Navigation extends Component {
 
@@ -25,7 +25,7 @@ class Navigation extends Component {
 
     render(){
         return (
-            <div className="navigation-box">
+            <MediaQuery  minDeviceWidth={700} className="navigation-box">
                 <div className="navigation-item">
                     <ReactSVG path={ me_svg }
                               callback={ this.callbackSvg }
@@ -50,7 +50,7 @@ class Navigation extends Component {
                     />
                     <div className="navigation-label">html5<br />Games</div>
                 </div>
-            </div>
+            </MediaQuery>
         );
     }
 
