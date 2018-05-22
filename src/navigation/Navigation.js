@@ -30,7 +30,7 @@ class Navigation extends Component {
                     <ReactSVG path={ me_svg }
                               callback={ this.callbackSvg }
                     />
-                    <div className="navigation-label">Hi</div>
+                    <div className="navigation-label">Home</div>
                 </div>
                 <div className="navigation-item">
                     <ReactSVG path={ about_svg }
