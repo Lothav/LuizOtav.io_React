@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import facebook from '../assets/imgs/facebook.png';
-import github from "../assets/imgs/github.png";
-import linkedin from '../assets/imgs/linkedin.png';
-import livecoding from "../assets/imgs/livecoding.png";
-import wow from '../assets/imgs/wow.png';
+import facebook from '../../assets/imgs/facebook.png';
+import github from "../../assets/imgs/github.png";
+import linkedin from '../../assets/imgs/linkedin.png';
+import livecoding from "../../assets/imgs/livecoding.png";
+import wow from '../../assets/imgs/wow.png';
 
 import './FindMe.css';
 
