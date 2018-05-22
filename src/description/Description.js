@@ -42,10 +42,10 @@ class Description extends Component {
                 <div className="description-box--ins">
                     <div className="icon-box-out">
                         <div className="icon-box">
-                            <i className="fa fa-hand-peace-o faa-bounce" />
+                            <i className="fa fa-desktop faa-bounce" />
                         </div>
                         <div className="icon-box-label">
-                            {this.getAge()} yrs old
+                            Computer Graphics
                         </div>
                     </div>
                     <div className="icon-box-out">
@@ -54,7 +54,7 @@ class Description extends Component {
                         </div>
                         <div className="icon-box-label">
                             <Typist>
-                                Full-stack Web Developer
+                                std::cout &lt;&lt; "C++ ftw" &lt;&lt; std::endl;
                             </Typist>
                         </div>
                     </div>
