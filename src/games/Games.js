@@ -9,8 +9,10 @@ class Games extends Component {
         return (
             <div className="wrapper">
                 <div className="game-box">
-                    <img className="game-gif" src={breakout} alt="loading..."/>
-                    Breakout
+                    <a href="https://github.com/Luiz0tavio/breakout">
+                        <img className="game-gif" src={breakout} alt="loading..."/>
+                        Breakout
+                    </a>
                 </div>
             </div>
         )

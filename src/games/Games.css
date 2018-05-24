@@ -6,7 +6,6 @@
 .game-box {
     float: left;
     margin: 20px;
-    color: #fff;
     background: #222;
     font-family: 'Eddie', sans-serif;
     text-align: center;
@@ -17,6 +16,11 @@
 
 .game-box .game-gif {
     width: 100%;
+}
+
+.game-box a {
+    text-decoration: none;
+    color: #fff;
 }
 
 @media screen and (max-width: 1000px){
