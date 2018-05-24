@@ -6,11 +6,11 @@ body {
   display: flex;
 }
 
-#nav{
-  background: #333;
-  height: 800px;
-}
-
 #root{
   width: 100%;
+}
+
+.route-box{
+  width: calc(100% - 80px);
+  display: inline-block;
 }

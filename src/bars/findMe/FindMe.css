@@ -1,0 +1,29 @@
+.find-me {
+    display: flex;
+}
+
+.find-me-text{
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 15px;
+    line-height: 27px;
+    margin: 15px;
+}
+
+
+.App-header {
+    background-color: #333;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+}
+
+.App-header img{
+    height: 30px;
+    margin-top: 10px;
+}

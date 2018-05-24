@@ -23,7 +23,7 @@ class MePhoto extends Component{
 
     handleLoad () {
         if(this.loaded_all){
-            setTimeout(()=>{ //@TODO fix this time out svg loaded
+            setTimeout(() => { //@TODO fix this time out svg loaded
                 this.setState({loaded: true});
             },1000);
         }else{
@@ -53,9 +53,9 @@ class MePhoto extends Component{
             </div>
         ) : (
             <div className="spinner">
-                <div className="bounce1"></div>
-                <div className="bounce2"></div>
-                <div className="bounce3"></div>
+                <div className="bounce1" />
+                <div className="bounce2" />
+                <div className="bounce3" />
             </div>
         );
     }

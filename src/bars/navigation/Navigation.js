@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import me_svg from '../assets/eu_foto_draw.svg';
-import game_svg from '../assets/game.svg';
-import about_svg from '../assets/about.svg';
-import skills_svg from '../assets/skills.svg';
+import me_svg from '../../assets/eu_foto_draw.svg';
+import game_svg from '../../assets/game.svg';
+import about_svg from '../../assets/about.svg';
+import skills_svg from '../../assets/skills.svg';
 
 import "./Navigation.css";
 import ReactSVG from 'react-svg';
 import MediaQuery from 'react-responsive';
+
+import { Link } from 'react-router-dom'
 
 class Navigation extends Component {
 
@@ -27,10 +29,12 @@ class Navigation extends Component {
         return (
             <MediaQuery  minDeviceWidth={700} className="navigation-box">
                 <div className="navigation-item">
-                    <ReactSVG path={ me_svg }
-                              callback={ this.callbackSvg }
-                    />
-                    <div className="navigation-label">Home</div>
+                    <Link to="/home">
+                        <ReactSVG path={ me_svg }
+                                  callback={ this.callbackSvg }
+                        />
+                        <div className="navigation-label">Home</div>
+                    </Link>
                 </div>
                 <div className="navigation-item">
                     <ReactSVG path={ about_svg }
@@ -45,10 +49,12 @@ class Navigation extends Component {
                     <div className="navigation-label">Skills</div>
                 </div>
                 <div className="navigation-item">
-                    <ReactSVG path={ game_svg }
-                              callback={ this.callbackSvg }
-                    />
-                    <div className="navigation-label">html5<br />Games</div>
+                    <Link to="/games">
+                        <ReactSVG path={ game_svg }
+                                  callback={ this.callbackSvg }
+                        />
+                        <div className="navigation-label">Games</div>
+                    </Link>
                 </div>
             </MediaQuery>
         );

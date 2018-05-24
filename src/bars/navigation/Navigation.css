@@ -1,12 +1,24 @@
 @font-face {
     font-family:"Eddie";
-    src: url("../assets/fonts/eddie.ttf");
+    src: url("../../assets/fonts/eddie.ttf");
 }
 
 .navigation-box {
     text-align: center;
-    margin-top: 65px;
+    margin-top: 50px;
+    padding-top: 15px;
     cursor: pointer;
+    width: 80px;
+    background: #333;
+    height: 800px;
+    display: inline-block;
+    min-height: 100vh;
+    float: left;
+}
+
+.navigation-box .navigation-item a {
+    color: #fff;
+    text-decoration: none;
 }
 
 @keyframes svg-animate {

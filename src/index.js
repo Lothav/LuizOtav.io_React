@@ -1,14 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navigation from './navigation/Navigation';
+import {HashRouter, Route, Switch} from 'react-router-dom';
+
+import Navigation from './bars/navigation/Navigation';
+import FindMe from './bars/findMe/FindMe';
 import BackgroundVideo from './backgroundVideo/BackgroundVideo';
-import {HashRouter, Route} from 'react-router-dom';
 import Home from './home/Home';
+import Games from './games/Games';
+
 import './index.css';
 
 ReactDOM.render(
     <HashRouter>
-        <Route path="/" component={Home}/>
+        <div>
+            <FindMe />
+            <Navigation />
+            <div className="route-box">
+                <Switch>
+                    <Route path="/games" component={Games}/>
+                    <Route component={Home}/>
+                </Switch>
+            </div>
+        </div>
     </HashRouter>,
     document.getElementById('root')
 );
@@ -18,7 +31,3 @@ ReactDOM.render(
     document.getElementById('background')
 );
 
-ReactDOM.render(
-    <Navigation />,
-    document.getElementById('nav')
-);

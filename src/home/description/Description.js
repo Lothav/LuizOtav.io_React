@@ -9,10 +9,11 @@ class Description extends Component {
         this.state = {isLoad : false, isLoad_name : false};
     }
 
-    getAge(){
+    getAge() {
         let birthday = new Date("07-06-1994");
         let ageDifMs = Date.now() - birthday.getTime();
         let ageDate = new Date(ageDifMs); // miliseconds from epoch
+
         return Math.abs(ageDate.getUTCFullYear() - 1970);
     }
 
@@ -36,7 +37,7 @@ class Description extends Component {
                                     <div>Luiz Otávio</div>
                                 </div>
                             </div>
-                        ) : (<div></div>);
+                        ) : (<div />);
                     }).call(this)
                 }
                 <div className="description-box--ins">
@@ -45,7 +46,7 @@ class Description extends Component {
                             <i className="fa fa-desktop faa-bounce" />
                         </div>
                         <div className="icon-box-label">
-                            Computer Graphics
+                            Computer Graphics enthusiast
                         </div>
                     </div>
                     <div className="icon-box-out">
@@ -54,7 +55,7 @@ class Description extends Component {
                         </div>
                         <div className="icon-box-label">
                             <Typist>
-                                std::cout &lt;&lt; "C++ ftw" &lt;&lt; std::endl;
+                                std::cout &lt;&lt; "C++ guy" &lt;&lt; std::endl;
                             </Typist>
                         </div>
                     </div>
@@ -76,7 +77,7 @@ class Description extends Component {
                     </div>
                 </div>
             </div>
-        ) : (<div></div>);
+        ) : (<div/>);
     }
 }
 
