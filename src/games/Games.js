@@ -7,7 +7,7 @@ import breakout from '../assets/imgs/breakout_gif.gif'
 class Games extends Component {
     render() {
         return (
-            <div className="games-grid">
+            <div className="wrapper">
                 <div className="game-box">
                     <img className="game-gif" src={breakout} alt="loading..."/>
                     Breakout

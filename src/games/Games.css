@@ -1,7 +1,10 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
 
 .game-box {
     float: left;
-    width: 20%;
     margin: 20px;
     color: #fff;
     background: #222;
@@ -9,8 +12,21 @@
     text-align: center;
     padding: 5px;
     border-radius: 3px;
+    grid-column: span 4;
 }
 
 .game-box .game-gif {
     width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    .game-box {
+        grid-column: span 6;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .game-box {
+        grid-column: span 12;
+    }
 }

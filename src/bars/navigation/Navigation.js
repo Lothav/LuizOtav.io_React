@@ -6,7 +6,6 @@ import game_svg from '../../assets/game.svg';
 
 import "./Navigation.css";
 import ReactSVG from 'react-svg';
-import MediaQuery from 'react-responsive';
 
 import { Link } from 'react-router-dom'
 
@@ -27,7 +26,7 @@ class Navigation extends Component {
 
     render() {
         return (
-            <MediaQuery  minDeviceWidth={700} className="navigation-box">
+            <div className="navigation-box">
                 <div className="navigation-item">
                     <Link to="/">
                         <ReactSVG path={ me_svg }
@@ -58,7 +57,7 @@ class Navigation extends Component {
                         <div className="navigation-label">Games</div>
                     </Link>
                 </div>
-            </MediaQuery>
+            </div>
         );
     }
 }
