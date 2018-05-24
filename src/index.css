@@ -10,7 +10,8 @@ body {
   width: 100%;
 }
 
-.route-box{
+.route-box {
   width: calc(100% - 80px);
   display: inline-block;
+  margin-top: 50px;
 }

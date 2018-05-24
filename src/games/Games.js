@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 
+import './Games.css'
+
+import breakout from '../assets/imgs/breakout_gif.gif'
+
 class Games extends Component {
     render() {
         return (
-            <div className="Games" >
-                <h1>ASDASFASF</h1>
-                <h1>ASDASFASF</h1>
-                <h1>ASDASFASF</h1>
-                <h1>ASDASFASF</h1>
+            <div className="games-grid">
+                <div className="game-box">
+                    <img className="game-gif" src={breakout} alt="loading..."/>
+                    Breakout
+                </div>
             </div>
         )
     }

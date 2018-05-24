@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 
 class Navigation extends Component {
 
-    callbackSvg(svg){
+    callbackSvg(svg) {
         let paths = svg.querySelectorAll("path");
         for(let i in paths) {
             if(paths.hasOwnProperty(i)) {
@@ -25,7 +25,7 @@ class Navigation extends Component {
         }
     }
 
-    render(){
+    render() {
         return (
             <MediaQuery  minDeviceWidth={700} className="navigation-box">
                 <div className="navigation-item">
@@ -36,6 +36,7 @@ class Navigation extends Component {
                         <div className="navigation-label">Home</div>
                     </Link>
                 </div>
+                {/*
                 <div className="navigation-item">
                     <ReactSVG path={ about_svg }
                               callback={ this.callbackSvg }
@@ -48,6 +49,7 @@ class Navigation extends Component {
                     />
                     <div className="navigation-label">Skills</div>
                 </div>
+                */}
                 <div className="navigation-item">
                     <Link to="/games">
                         <ReactSVG path={ game_svg }
@@ -59,7 +61,6 @@ class Navigation extends Component {
             </MediaQuery>
         );
     }
-
 }
 
 export default Navigation;
