@@ -2,50 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 30px;
-}
-
-.App-hearth {
-  height: 30px;
-  animation: App-hearth-beat infinite 3s linear;
-}
-
-.built-with-love-and-react-box{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  right: 0;
-  background: #333;
-}
-
-.built-with-love-and-react img{
-  vertical-align: inherit;
-}
-.built-with-love-and-react{
-  line-height: 34px;
-  padding-left: 100px;
-  vertical-align: middle;
-}
-
 
 .App-intro {
   font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes App-hearth-beat {
-  0%{ transform: scale( .75 ); }
-  20%{ transform: scale( 1 ); }
-  40%{ transform: scale( .75 ); }
-  60%{ transform: scale( 1 ); }
-  80%{ transform: scale( .75 ); }
-  100%{ transform: scale( .75 ); }
 }
 
 html, body {
@@ -73,8 +32,6 @@ html, body {
   z-index: 1;
   top:100px;
 }
-
-
 
 .first, .second {
   height: calc(100vh - 100px);

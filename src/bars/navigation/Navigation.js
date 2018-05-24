@@ -29,7 +29,7 @@ class Navigation extends Component {
         return (
             <MediaQuery  minDeviceWidth={700} className="navigation-box">
                 <div className="navigation-item">
-                    <Link to="/home">
+                    <Link to="/">
                         <ReactSVG path={ me_svg }
                                   callback={ this.callbackSvg }
                         />

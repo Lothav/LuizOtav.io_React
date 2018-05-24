@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import MePhoto from './mePhoto/MePhoto';
-import logo from '../assets/logo.svg';
-import hearth from "../assets/hearth.png";
+import Description from './description/Description';
 
 import './Home.css';
 
@@ -28,18 +27,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-
                 <div style={{height:"50px"}} />
                 <MePhoto />
+                <Description />
                 <div style={{height:"50px"}} />
-                <div className="built-with-love-and-react-box">
-                    <div className="built-with-love-and-react">
-                        Built with
-                        <img src={hearth} className="App-hearth" alt="hearth" />
-                        and React
-                        <img src={logo} className="App-logo" alt="logo" />
-                    </div>
-                </div>
             </div>
         );
     }

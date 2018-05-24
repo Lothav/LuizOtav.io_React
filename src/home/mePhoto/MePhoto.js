@@ -3,7 +3,6 @@ import photo from '../../assets/me.svg';
 import './MePhoto.css';
 import ReactSVG from 'react-svg';
 import '../../loading.css';
-import Description from '../description/Description';
 
 class MePhoto extends Component{
 
@@ -49,7 +48,6 @@ class MePhoto extends Component{
                         }
                     }}
                 />
-                <Description />
             </div>
         ) : (
             <div className="spinner">
