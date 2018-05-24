@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import me_svg from '../../assets/eu_foto_draw.svg';
 import game_svg from '../../assets/game.svg';
-import about_svg from '../../assets/about.svg';
-import skills_svg from '../../assets/skills.svg';
+//import about_svg from '../../assets/about.svg';
+//import skills_svg from '../../assets/skills.svg';
 
 import "./Navigation.css";
 import ReactSVG from 'react-svg';
