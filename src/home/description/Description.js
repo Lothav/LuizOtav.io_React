@@ -13,7 +13,6 @@ class Description extends Component {
         let birthday = new Date("07-06-1994");
         let ageDifMs = Date.now() - birthday.getTime();
         let ageDate = new Date(ageDifMs); // miliseconds from epoch
-
         return Math.abs(ageDate.getUTCFullYear() - 1970);
     }
 
