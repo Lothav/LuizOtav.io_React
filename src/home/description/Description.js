@@ -64,7 +64,7 @@ class Description extends Component {
                             <i className="fa fa-graduation-cap faa-tada" />
                         </div>
                         <div className="icon-box-label">
-                            Graduating Computer Science
+                            Computer Science Undergrad
                         </div>
                     </div>
                     <div className="icon-box-out">
