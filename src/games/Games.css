@@ -12,15 +12,43 @@
     padding: 5px;
     border-radius: 3px;
     grid-column: span 4;
+    min-height: 300px;
+    display: inline-block;
 }
 
 .game-box .game-gif {
     width: 100%;
+    object-fit: cover;
+    height: 260px
 }
 
 .game-box a {
     text-decoration: none;
     color: #fff;
+}
+
+.game-box .game-text-name {
+    min-height: 40px;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.game-box .game-box-image {
+    height: 260px;
+}
+
+.game-box .game-box-title {
+    position:relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+}
+
+.game-box .game-title {
+    padding-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 @media screen and (max-width: 1000px){

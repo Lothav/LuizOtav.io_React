@@ -13,26 +13,47 @@ class Games extends Component {
             <div className="wrapper">
                 <div className="game-box">
                     <a href="https://github.com/Luiz0tavio/adler">
-                        <img className="game-gif" src={adler} alt="loading..."/>
-                        Adler
+                        <div className="game-box-image">
+                            <span className="helper" />
+                            <img className="game-gif" src={adler} alt="loading..."/>
+                        </div>
+                        <div className="game-box-title">
+                            <span className="game-title">Adler</span>
+                        </div>
                     </a>
                 </div>
                 <div className="game-box">
                     <a href="https://github.com/Luiz0tavio/breakout">
-                        <img className="game-gif" src={breakout} alt="loading..."/>
-                        Breakout
+                        <div className="game-box-image">
+                            <span className="helper" />
+                            <img className="game-gif" src={breakout} alt="loading..."/>
+                        </div>
+                        <div className="game-box-title">
+                            <span className="game-title">Breakout</span>
+                        </div>
                     </a>
                 </div>
                 <div className="game-box">
                     <a href="https://github.com/Luiz0tavio/coco_vs_paint">
-                        <img className="game-gif" src={coco_vs_paint} alt="loading..."/>
-                        Coco vs Paint
+                        <div className="game-box-image">
+                            <span className="helper" />
+                            <img className="game-gif" src={coco_vs_paint} alt="loading..."/>
+                        </div>
+                        <div className="game-box-title">
+                            <span className="game-title">Coco vs Paint</span>
+                        </div>
                     </a>
                 </div>
+
                 <div className="game-box">
                     <a href="https://github.com/Luiz0tavio/lost_robot">
-                        <img className="game-gif" src={lost_robot} alt="loading..."/>
-                        Lost Robot
+                        <div className="game-box-image">
+                            <img className="game-gif" src={lost_robot} alt="loading..."/>
+                        </div>
+
+                        <div className="game-box-title">
+                            <span className="game-title">Lost Robot</span>
+                        </div>
                     </a>
                 </div>
             </div>
