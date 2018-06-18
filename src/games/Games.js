@@ -5,6 +5,7 @@ import './Games.css'
 import coco_vs_paint from '../assets/imgs/coco_vs_paint_gif.gif'
 import breakout from '../assets/imgs/breakout_gif.gif'
 import adler from '../assets/imgs/adler_gif.gif'
+import lost_robot from '../assets/imgs/lost_robot_gif.gif'
 
 class Games extends Component {
     render() {
@@ -26,6 +27,12 @@ class Games extends Component {
                     <a href="https://github.com/Luiz0tavio/coco_vs_paint">
                         <img className="game-gif" src={coco_vs_paint} alt="loading..."/>
                         Coco vs Paint
+                    </a>
+                </div>
+                <div className="game-box">
+                    <a href="https://github.com/Luiz0tavio/lost_robot">
+                        <img className="game-gif" src={lost_robot} alt="loading..."/>
+                        Lost Robot
                     </a>
                 </div>
             </div>
