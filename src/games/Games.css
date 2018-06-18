@@ -18,7 +18,7 @@
 
 .game-box .game-gif {
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
     height: 260px
 }
 
