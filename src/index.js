@@ -6,6 +6,7 @@ import Bars from './bars/Bars'
 import BackgroundVideo from './backgroundVideo/BackgroundVideo';
 import Home from './home/Home';
 import Games from './games/Games';
+import Resume from './resume/Resume';
 
 import './index.css';
 
@@ -15,6 +16,7 @@ ReactDOM.render(
             <Bars />
             <div className="route-box">
                 <Switch>
+                    <Route path="/resume" component={Resume}/>
                     <Route path="/games" component={Games}/>
                     <Route component={Home}/>
                 </Switch>

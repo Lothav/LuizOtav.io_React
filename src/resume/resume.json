@@ -1,0 +1,186 @@
+{
+  "basics": {
+    "name": "Luiz Otávio Resende Vasconcelos",
+    "label": "VP of Engineering",
+    "picture": "",
+    "email": "me@luizotav.io",
+    "phone": "+55 32 99154 4826",
+    "website": "https://LuizOtav.io",
+    "summary": "Computer Science graduating and passionate about Computer Graphics, Math and Databases. Developing game engine on my spare time.",
+    "location": {
+      "address": "131 - BL3 / Ap312 - Peçanha St",
+      "postalCode": "MG 30710-040",
+      "city": "Belo Horizonte",
+      "countryCode": "BR",
+      "region": "Minas Gerais"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "Luiz0tavio",
+        "url": "https://github.com/Luiz0tavio"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "luizorv",
+        "url": "https://www.linkedin.com/in/luizorv"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Tracksale",
+      "position": "VP of Engineering",
+      "website": "https://tracksale.co",
+      "startDate": "2018-01-01",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+        "Manage 6-member Developer team.",
+        "Task assign, code review, merge and deployment.",
+        "Define which frameworks and libs to use.",
+        "Database scale architecture and consistency responsible.",
+        "Micro-services software architecture and design responsible."
+      ]
+    },
+    {
+      "company": "Tracksale",
+      "position": "Software Engineer",
+      "website": "https://tracksale.co",
+      "startDate": "2017-06-01",
+      "endDate": "2018-01-01",
+      "summary": "",
+      "highlights": [
+	"Micro-services development.",
+        "Develop and maintain Android and iOS Tracksale App",
+        "Platform features implementation.",
+	"Reduce technical debt.",
+	"Intern supervision and code review."
+      ]
+    },
+    {
+      "company": "Tracksale",
+      "position": "Intern",
+      "website": "https://tracksale.co",
+      "startDate": "2015-06-15",
+      "endDate": "2017-06-01",
+      "summary": "",
+      "highlights": [
+        "Platform features implementation.",
+        "Automated testing.",
+        "Code improvement."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Federal University of Minas Gerais",
+      "area": "Computer Science (In Progress)",
+      "studyType": "Bachelor",
+      "startDate": "2015-01-01",
+      "endDate": "2019-07-01",
+      "gpa": "",
+      "courses": [
+	"Advanced Modern C++",
+        "Advanced Computer Graphics",
+        "Advanced Databases"
+      ]
+    },
+    {
+      "institution": "Federal University of São João del Rei",
+      "area": "Electrical Engineering (Not Complete)",
+      "studyType": "Bachelor",
+      "startDate": "2012-01-01",
+      "endDate": "2014-06-01",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "RoboCup Simulation 2D - LARC - Fortaleza/CE",
+      "date": "2013-08-20",
+      "awarder": "2º Place",
+      "summary": ""
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Frontend Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "ReactJS",
+        "VueJS",
+        "Angular(1 and 4)",
+        "Task Runners",
+        "CSS/HTML preprocessors (SASS, LESS, JADE)"
+      ]
+    },
+    {
+      "name": "Backend Development",
+      "level": "Master",
+      "keywords": [
+        "PHP (Yii, Laravel)",
+        "Java (Spring)",
+        "Go (microservices using gRPC protocol)",
+        "NodeJS (express)"
+      ]
+    },
+    {
+      "name": "Agile Methodology",
+      "level": "Advanced",
+      "keywords": [
+        "Scrum"
+      ]
+    },
+    {
+      "name": "Computer Graphics",
+      "level": "Intermediate",
+      "keywords": [
+        "Vulkan",
+        "OpenGL",
+        "GLSL"
+      ]
+    },
+    {
+      "name": "Web Mobile Development",
+      "level": "Advanced",
+      "keywords": [
+        "React Native",
+        "Ionic 2"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "Advanced",
+      "keywords": [
+        "MySQL",
+        "MongoDB",
+        "PostegreSQL",
+        "Prometheus"
+      ]
+    },
+    {
+      "name": "Data visualization",
+      "level": "Intermediate",
+      "keywords": [
+        "Grafana"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [],
+  "references": []
+}
