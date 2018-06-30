@@ -1,5 +1,9 @@
 #!/bin/bash
 
+cd src/resume &&
+resume export resume.html &&
+mv resume.html ../../public/resume.html &&
+cd ../.. &&
 npm run build &&
 git add -A . &&
 git commit -am "$1" &&

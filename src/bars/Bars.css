@@ -14,6 +14,8 @@
 .built-with-love-and-react{
     line-height: 34px;
     padding-left: 100px;
+    font-size: medium;
+    color: white;
     vertical-align: middle;
 }
 
