@@ -21,6 +21,7 @@
 .navigation-box .navigation-item a {
     color: #fff;
     text-decoration: none;
+    outline: 0;
 }
 
 @keyframes svg-animate {

@@ -44,10 +44,12 @@ class Navigation extends Component {
                 </div>
                 */}
                 <div className="navigation-item">
-                    <ReactSVG path={ skills_svg }
-                              callback={ this.callbackSvg }
-                    />
-                    <div className="navigation-label">Resume</div>
+                    <Link to="/resume">
+                        <ReactSVG path={ skills_svg }
+                                  callback={ this.callbackSvg }
+                        />
+                        <div className="navigation-label">Resume</div>
+                    </Link>
                 </div>
 
                 <div className="navigation-item">

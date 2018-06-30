@@ -25,6 +25,7 @@
 .game-box a {
     text-decoration: none;
     color: #fff;
+    outline: 0;
 }
 
 .game-box .game-text-name {
