@@ -7,6 +7,7 @@ import BackgroundVideo from './backgroundVideo/BackgroundVideo';
 import Home from './home/Home';
 import Games from './games/Games';
 import Resume from './resume/Resume';
+import CSAnnotations from "./cs_annotations/CSAnnotations";
 
 import './index.css';
 
@@ -18,6 +19,7 @@ ReactDOM.render(
                 <Switch>
                     <Route path="/resume" component={Resume}/>
                     <Route path="/games" component={Games}/>
+                    <Route path="/cs_annotations" component={CSAnnotations}/>
                     <Route component={Home}/>
                 </Switch>
             </div>
