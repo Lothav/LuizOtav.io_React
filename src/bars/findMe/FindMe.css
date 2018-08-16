@@ -2,6 +2,11 @@
     display: flex;
 }
 
+.find-me a {
+    text-decoration: none;
+    outline: 0;
+}
+
 .find-me-text{
     text-align: center;
     vertical-align: middle;

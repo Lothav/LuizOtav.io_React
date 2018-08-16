@@ -36,11 +36,11 @@
       "endDate": "Present",
       "summary": "",
       "highlights": [
-        "Manage 6-member Developer team.",
-        "Task assign, code review, merge and deployment.",
-        "Define which frameworks and libs to use.",
-        "Database scale architecture and consistency responsible.",
-        "Micro-services software architecture and design responsible."
+        "Manage 6-member Developer team",
+        "Task assign, code review, merge and deployment",
+        "Define which frameworks and libs to use",
+        "Database scale architecture and consistency responsible",
+        "Micro-services software architecture and design responsible"
       ]
     },
     {
@@ -51,11 +51,11 @@
       "endDate": "2018-01-01",
       "summary": "",
       "highlights": [
-	"Micro-services development.",
+	    "Micro-services development",
         "Develop and maintain Android and iOS Tracksale App",
-        "Platform features implementation.",
-	"Reduce technical debt.",
-	"Intern supervision and code review."
+        "Platform features implementation",
+	    "Reduce technical debt",
+	    "Intern supervision and code review"
       ]
     },
     {
@@ -66,8 +66,8 @@
       "endDate": "2017-06-01",
       "summary": "",
       "highlights": [
-        "Platform features implementation.",
-        "Automated testing.",
+        "Platform features implementation",
+        "Automated testing",
         "Code improvement."
       ]
     }
@@ -82,7 +82,7 @@
       "endDate": "2019-07-01",
       "gpa": "",
       "courses": [
-	"Advanced Modern C++",
+	    "Advanced Modern C++",
         "Advanced Computer Graphics",
         "Advanced Databases"
       ]
@@ -124,7 +124,7 @@
       "level": "Master",
       "keywords": [
         "PHP (Yii, Laravel)",
-        "Java (Spring)",
+        "Java (Android, Spring)",
         "Go (microservices using gRPC protocol)",
         "NodeJS (express)"
       ]
@@ -146,11 +146,13 @@
       ]
     },
     {
-      "name": "Web Mobile Development",
+      "name": "Mobile Development",
       "level": "Advanced",
       "keywords": [
         "React Native",
-        "Ionic 2"
+        "Ionic 2",
+        "Android (Java)",
+        "Espresso"
       ]
     },
     {

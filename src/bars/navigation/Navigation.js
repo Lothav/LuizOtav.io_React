@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import me_svg from '../../assets/eu_foto_draw.svg';
 import game_svg from '../../assets/game.svg';
 //import about_svg from '../../assets/about.svg';
-//import skills_svg from '../../assets/skills.svg';
+import skills_svg from '../../assets/skills.svg';
 
 import "./Navigation.css";
 import ReactSVG from 'react-svg';
@@ -42,13 +42,16 @@ class Navigation extends Component {
                     />
                     <div className="navigation-label">About<br />Me</div>
                 </div>
-                <div className="navigation-item">
-                    <ReactSVG path={ skills_svg }
-                              callback={ this.callbackSvg }
-                    />
-                    <div className="navigation-label">Skills</div>
-                </div>
                 */}
+                <div className="navigation-item">
+                    <Link to="/resume">
+                        <ReactSVG path={ skills_svg }
+                                  callback={ this.callbackSvg }
+                        />
+                        <div className="navigation-label">Resume</div>
+                    </Link>
+                </div>
+
                 <div className="navigation-item">
                     <Link to="/games">
                         <ReactSVG path={ game_svg }
