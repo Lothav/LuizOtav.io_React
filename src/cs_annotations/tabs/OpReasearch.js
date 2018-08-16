@@ -41,29 +41,78 @@ class OpResearch extends Component {
                             <li>Dantzig and Thapa. Linear Programming</li>
                         </ol>
                         <p>
-                            Discussion about Operational Researching history. <br/>
+                            Discussion about Operational Researching history -> 
+								George Dantzig use OR to solve war problems. 
+								Furthermore he develop <b>Simplex</b><br/>
                             Can be apply in most real world fields.<br/>
                             In this course, we care about Linear programming and Integer Programming.<br/>
                         </p>
                         <h2>2nd Class (14/08)</h2>
                         <p>
-                            Discussing from 1 to 2.2 section of <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
+                            Sections 1 to 2.2 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
                             Simplex comment: Worst case it's exponential, but, in the average case, it's polynomial!<br/>
-                            Tip: Every best-solution point remains on crossing lines. <br/>
+                            Tip: draw the line equations and analyse the resultant area intersection. Every best-solution point remains on crossing lines. <br/>
                         </p>
+						<p>An LP problem is built with three main components:</p>
+						<ul>
+							<li><b>Decision variables</b>: which represent, in fact, a decision that must be taken no problem modeled  </li>
+							<li><b>Objective function</b>: which represents, in a numeric value, the benefit or cost associated those decisions that will be taken. It's the function that must max or min</li>
+							<li><b>Restrictions</b>: represents limitations from real world. The solution must obey these restrictions. </li>
+						</ul>
+						<p>
+							<b>Exercise 2</b>: <br/>
+							Matching restrictions:<br/>
+							$$2x_1 + x_2 = 4$$
+							$$x_1  + 2x_2 = 3$$
+							Find `x_2` intersection: 
+							$$2x_1 + x_2 = 4$$
+							$$-2x_1 - 4x_2 = -6$$
+							$$-3x_2 = -2$$
+							$$x_2 = 2/3$$
+							then, find `x_1` intersection:
+							$$x_1 + 2 * 2/3 = 3$$
+							$$x_1 = 3 - 4/3$$
+							$$x_1 = 5/3$$
+						</p>
+						Intersection: `(2/3, 5/3)`
                         <p>
                             Solving 2.2 Practical example: <br/>
-                            variables: x1, x2, x3, x4, y1, y2 <br/>
-                            $$max (300x1 + 260x2 + 220x3 + 180x3 - 8y1 - 6y2)$$
-                            $$s.t. (y1 \le 600) $$
-                            $$y2 \le 650$$
-                            $$y1 = 8x1 + 5x2 + 5x3 + 6x4$$
-                            $$y2 = 7x1 + 8x2 + 7x3 + 4x4$$
-                            $$11x1 + 7x2 + 6x3 + 5x4 \leq 700$$
-                            $$4x1  + 6x2 + 5x3 + 4x4 \leq 500$$
-                            $$x,y,z \ge 0$$
+                            variables: `x_1, x_2, x_3, x_4, y_1, y_2` <br/>
+                            $$max\quad(300x_1 + 260x_2 + 220x_3 + 180x_4 - 8y_1 - 6y_2)$$
+                            $$s.t.\quad8x_1 + 5x_2 + 5x_3 + 6x_4 \le y_1$$
+                            $$7x_1 + 8x_2 + 7x_3 + 4x_4 \le y_2$$
+                            $$11x_1 + 7x_2 + 6x_3 + 5x_4 \leq 700$$
+                            $$4x_1  + 6x_2 + 5x_3 + 4x_4 \leq 500$$
+                            $$y_1 \le 600$$
+							$$y_2 \le 650$$
+                            $$x_1, x_2, x_3, x_4 ,y_1, y_2 \ge 0$$
                         </p>
-
+	                    <h2>3rd Class (16/08)</h2>
+						<p>
+							Sections 5 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
+                        	<b>FPI model</b> =>
+								$$ max\quad c^T x $$
+								$$s.t.\quad Ax=b$$
+								$$x \ge 0 $$
+							Simplex uses FPI, so, we want to know how to convert to it.<br/>
+							Steps to convert:
+							<ul>
+								<li>`min` to `max` : multiply by `-1` objective function.</li>
+								<li>`\le \ge` to `=` : add gap variables.</li>
+								<li>if we have "free variables", split it into 2 variables 
+								`x_1^+` and `x_1^-`, that means, `x = x_1^+ - x_1^-`</li>
+							</ul>
+						</p>
+						<p>
+							From section 4, solving <b>Example 1</b> <br/>
+							.....
+						</p>
+						<p>
+							$$max\; 0.14x_1 + 0.70x_2+ 0.3x_3+ 0.1x_4$$
+							$$x_1 \ge 0.55 (x_1 + x_2)$$
+							$$x_2 \le 0.75 ( x_1 + x_2 + x_3 + x_4)$$
+							$$0.14x_1 + 0.70x2+ 0.3x3+ 0.1x4 \le 0.15 * (x_1 + x_2 + x_3+ x_4)$$
+						</p>
                     </div>
                 </div>
             </MathJax.Context>
