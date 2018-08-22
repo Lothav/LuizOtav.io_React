@@ -70,10 +70,21 @@ class OpResearch extends Component {
         return lp;
     }
 
+    scrollToBottom = () => {
+        if(this.messagesEnd === undefined) {
+            return;
+        }
+        let refreshIntervalId = setInterval(() => {
+            this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+        setTimeout(function () {
+            clearInterval(refreshIntervalId);
+        }, 3000);
+    };
+
     render() {
         return (
             <MathJax.Context>
-
                 <div className="site_content">
                     <div className="sidebar_container">
                         <img className="paperclip" src={papperclip} alt="paperclip"/>
@@ -91,7 +102,7 @@ class OpResearch extends Component {
                             <p>PW Content HERE</p>
                         </div>
                     </div>
-                    <div className="content">
+                    <div className="content" >
                         <h1>Operational Researching</h1>
                         <h2>1st Class (09/08)</h2>
                         Points distribution:
@@ -199,6 +210,12 @@ class OpResearch extends Component {
                             ], [true, false, true])}
                         </p>
 
+                    </div>
+                    <div style={{ float:"left", clear: "both" }}
+                         ref={(el) => {
+                             this.messagesEnd = el;
+                             this.scrollToBottom();
+                         }}>
                     </div>
                 </div>
             </MathJax.Context>
