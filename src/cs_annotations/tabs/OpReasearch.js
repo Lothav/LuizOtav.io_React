@@ -17,7 +17,7 @@ class OpResearch extends Component {
     static  linear_programming(obj_fn, restrictions, non_neg_vars) {
 
         if (!Array.isArray(restrictions) || !Array.isArray(obj_fn)) {
-            console.log("linear_programming() ERR: Wrong types params [" + typeof restrictions + ", " + typeof obj_fn + "]");
+            console.log("linear_programming() ERR: Wrong types params [" + typeof restrictions + ", " + typeof obj_fn + "]. Must be [array, array]");
             return "";
         }
 
@@ -31,18 +31,26 @@ class OpResearch extends Component {
         });
         lp += ')$$';
 
-        restrictions.forEach(function (restriction, index) {
-            lp += '$$';
-            lp += index === 0 ? 's.t.\\;' : ' ';
-            for (let i = 0; i < size; i ++) {
-                if (restriction[i] !== 0) {
-                    console.log(restriction[i]);
-                    lp += (restriction[i] > 0 ? " +" : " ") + restriction[i].toString()  + 'x_' + i.toString();
-                }
+        if (restrictions.length >0) {
+            if(Array.isArray(restrictions[0])) {
+                restrictions.forEach(function (restriction, index) {
+                    lp += '$$';
+                    lp += index === 0 ? 's.t.\\;' : ' ';
+                    for (let i = 0; i < size; i ++) {
+                        if (restriction[i] !== 0) {
+                            lp += (restriction[i] > 0 ? " +" : " ") + restriction[i].toString()  + 'x_' + i.toString();
+                        }
+                    }
+                    lp +=  restriction[size] + ' ' + restriction[size+1];
+                    lp += '$$';
+                });
+            } else {
+                lp += '$$';
+                lp += 's.t.\\;';
+                lp += restrictions.join(" ");
+                lp += '$$';
             }
-            lp +=  restriction[size] + ' ' + restriction[size+1];
-            lp += '$$';
-        });
+        }
 
         if(Array.isArray(non_neg_vars) && non_neg_vars.length > 0) {
 
@@ -183,6 +191,14 @@ class OpResearch extends Component {
                         <p>
                             {OpResearch.linear_programming([1,2,3], [[2,3,4,'\\leq', -3], [-3,-31,42,'\\leq', -3]], [true, false , true])}
                         </p>
+                        <p>
+                            {OpResearch.linear_programming([1,2,3], [
+                                OpResearch.matrix([[1,2,3], [1,2,3], [1,2,3]]),
+                                '\\leq',
+                                OpResearch.matrix([[1], [3], [2]]),
+                            ], [true, false, true])}
+                        </p>
+
                     </div>
                 </div>
             </MathJax.Context>
