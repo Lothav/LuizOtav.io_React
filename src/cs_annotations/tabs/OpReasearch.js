@@ -14,33 +14,50 @@ class OpResearch extends Component {
         return '\\begin{pmatrix} ' + lines.join("\\\\") + '\\end{pmatrix}';
     }
 
-    static linear_programming(obj_fn, conds) {
+    static  linear_programming(obj_fn, restrictions, non_neg_vars) {
 
-        if (!Array.isArray(conds) || !Array.isArray(obj_fn)) {
-            console.log("linear_programming() ERR: Wrong types params [" + typeof conds + ", " + typeof obj_fn + "]");
+        if (!Array.isArray(restrictions) || !Array.isArray(obj_fn)) {
+            console.log("linear_programming() ERR: Wrong types params [" + typeof restrictions + ", " + typeof obj_fn + "]");
             return "";
         }
 
-        let size = conds.length;
+        let size = obj_fn.length;
 
         let lp = '$$max\\;(';
         obj_fn.forEach(function(obj_fn_i, index) {
             if(obj_fn_i !== 0) {
-                lp += (obj_fn_i > 0 ? ' +' : ' -') + obj_fn_i + 'x_' + index;
+                lp += (obj_fn_i > 0 ? ' +' : ' ') + obj_fn_i.toString() + 'x_' + index.toString();
             }
         });
         lp += ')$$';
 
-        conds.forEach(function (cond) {
+        restrictions.forEach(function (restriction, index) {
             lp += '$$';
+            lp += index === 0 ? 's.t.\\;' : ' ';
             for (let i = 0; i < size; i ++) {
-                if (cond[i] !== 0) {
-                    lp += (cond[i] > 0 ? " +" : " -") + cond[i] + + 'x_' + i;
+                if (restriction[i] !== 0) {
+                    console.log(restriction[i]);
+                    lp += (restriction[i] > 0 ? " +" : " ") + restriction[i].toString()  + 'x_' + i.toString();
                 }
             }
-            lp +=  cond[size] + cond[size+1];
+            lp +=  restriction[size] + ' ' + restriction[size+1];
             lp += '$$';
         });
+
+        if(Array.isArray(non_neg_vars) && non_neg_vars.length > 0) {
+
+            let arr = [];
+
+            non_neg_vars.forEach(function (non_neg_var, index) {
+                if(non_neg_var) {
+                    arr.push("x_" + index.toString())
+                }
+            });
+
+            lp += '$$';
+            lp += arr.join(", ");
+            lp += '\\ge 0 $$';
+        }
 
         return lp;
     }
@@ -164,7 +181,7 @@ class OpResearch extends Component {
                             {'$$' + OpResearch.matrix([[1,2], [3,4]]) + '$$'}
                         </p>
                         <p>
-                            {OpResearch.linear_programming([1,2,3], [[2,3,4,'<=', -3]])}
+                            {OpResearch.linear_programming([1,2,3], [[2,3,4,'\\leq', -3], [-3,-31,42,'\\leq', -3]], [true, false , true])}
                         </p>
                     </div>
                 </div>
