@@ -25,7 +25,7 @@ class VisualComputing extends Component {
                 <div className="content">
                     <h1>Visual Computing</h1>
                     <p>
-                        Image processingbr <br/>
+                        Image processing <br/>
                         PNG is format that has no losses <br/>
                         Put image in a matrix format -> don't want to more or less pixels <br/>
                         Fourier -> create a frequency function that describe a variation of color image <br/>
@@ -35,6 +35,23 @@ class VisualComputing extends Component {
                         The light quantity as an <b>log</b> function: with high luminance we cant see much detail! <br/>
                         Image depth: `2^8` = 256. We don't want to use more depth unless specific cases. <br/>
                     </p>
+                    <p>
+                        Noise <br/>
+                        Solve Salt and pepper with <b>median</b> neighbor <br/>
+                        Analyse entropy > check histogram. High variation histogram => low entropy.
+                    </p>
+                    <p>
+                        Quality Metrics <br/>
+                        Maximum Error: Useful just when you want to check if both images are equal (e.g. compression with no loss). <br/>
+                        Correlation Coeff: good when change bright (sum a value to all pixels)<br/>
+                    </p>
+                    <p>
+                        Transforming <br/>
+                        Unidimensional O(n^2) <br/>
+                        Bidimensional O(n^4) <br/>
+                        DCT -> used to JPG -> discard lower values! <br/>
+                    </p>
+
                 </div>
             </div>
         )

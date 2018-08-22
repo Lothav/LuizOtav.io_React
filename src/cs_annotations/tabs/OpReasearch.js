@@ -4,9 +4,19 @@ import papperclip from '../static/paperclip.png'
 import MathJax from 'react-mathjax2'
 
 class OpResearch extends Component {
+    static matrix(vec) {
+
+        let lines = [];
+        vec.forEach(function(line){
+            lines.push(line.join(" & "));
+        });
+
+        return '$$ \\begin{pmatrix} ' + lines.join("\\\\") + '\\end{pmatrix} $$';
+    }
     render() {
         return (
             <MathJax.Context>
+
                 <div className="site_content">
                     <div className="sidebar_container">
                         <img className="paperclip" src={papperclip} alt="paperclip"/>
@@ -41,9 +51,9 @@ class OpResearch extends Component {
                             <li>Dantzig and Thapa. Linear Programming</li>
                         </ol>
                         <p>
-                            Discussion about Operational Researching history -> 
-								George Dantzig use OR to solve war problems. 
-								Furthermore he develop <b>Simplex</b><br/>
+                            Discussion about Operational Researching history ->
+                            George Dantzig use OR to solve war problems.
+                            Furthermore he develop <b>Simplex</b><br/>
                             Can be apply in most real world fields.<br/>
                             In this course, we care about Linear programming and Integer Programming.<br/>
                         </p>
@@ -53,28 +63,28 @@ class OpResearch extends Component {
                             Simplex comment: Worst case it's exponential, but, in the average case, it's polynomial!<br/>
                             Tip: draw the line equations and analyse the resultant area intersection. Every best-solution point remains on crossing lines. <br/>
                         </p>
-						<p>An LP problem is built with three main components:</p>
-						<ul>
-							<li><b>Decision variables</b>: which represent, in fact, a decision that must be taken no problem modeled  </li>
-							<li><b>Objective function</b>: which represents, in a numeric value, the benefit or cost associated those decisions that will be taken. It's the function that must max or min</li>
-							<li><b>Restrictions</b>: represents limitations from real world. The solution must obey these restrictions. </li>
-						</ul>
-						<p>
-							<b>Exercise 2</b>: <br/>
-							Matching restrictions:<br/>
-							$$2x_1 + x_2 = 4$$
-							$$x_1  + 2x_2 = 3$$
-							Find `x_2` intersection: 
-							$$2x_1 + x_2 = 4$$
-							$$-2x_1 - 4x_2 = -6$$
-							$$-3x_2 = -2$$
-							$$x_2 = 2/3$$
-							then, find `x_1` intersection:
-							$$x_1 + 2 * 2/3 = 3$$
-							$$x_1 = 3 - 4/3$$
-							$$x_1 = 5/3$$
-						</p>
-						Intersection: `(2/3, 5/3)`
+                        <p>An LP problem is built with three main components:</p>
+                        <ul>
+                            <li><b>Decision variables</b>: which represent, in fact, a decision that must be taken no problem modeled  </li>
+                            <li><b>Objective function</b>: which represents, in a numeric value, the benefit or cost associated those decisions that will be taken. It's the function that must max or min</li>
+                            <li><b>Restrictions</b>: represents limitations from real world. The solution must obey these restrictions. </li>
+                        </ul>
+                        <p>
+                            <b>Exercise 2</b>: <br/>
+                            Matching restrictions:<br/>
+                            $$2x_1 + x_2 = 4$$
+                            $$x_1  + 2x_2 = 3$$
+                            Find `x_2` intersection:
+                            $$2x_1 + x_2 = 4$$
+                            $$-2x_1 - 4x_2 = -6$$
+                            $$-3x_2 = -2$$
+                            $$x_2 = 2/3$$
+                            then, find `x_1` intersection:
+                            $$x_1 + 2 * 2/3 = 3$$
+                            $$x_1 = 3 - 4/3$$
+                            $$x_1 = 5/3$$
+                        </p>
+                        Intersection: `(2/3, 5/3)`
                         <p>
                             Solving 2.2 Practical example: <br/>
                             variables: `x_1, x_2, x_3, x_4, y_1, y_2` <br/>
@@ -84,35 +94,46 @@ class OpResearch extends Component {
                             $$11x_1 + 7x_2 + 6x_3 + 5x_4 \leq 700$$
                             $$4x_1  + 6x_2 + 5x_3 + 4x_4 \leq 500$$
                             $$y_1 \le 600$$
-							$$y_2 \le 650$$
+                            $$y_2 \le 650$$
                             $$x_1, x_2, x_3, x_4 ,y_1, y_2 \ge 0$$
                         </p>
-	                    <h2>3rd Class (16/08)</h2>
-						<p>
-							Sections 5 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
-                        	<b>FPI model</b> =>
-								$$ max\quad c^T x $$
-								$$s.t.\quad Ax=b$$
-								$$x \ge 0 $$
-							Simplex uses FPI, so, we want to know how to convert to it.<br/>
-							Steps to convert:
-							<ul>
-								<li>`min` to `max` : multiply by `-1` objective function.</li>
-								<li>`\le \ge` to `=` : add gap variables.</li>
-								<li>if we have "free variables", split it into 2 variables 
-								`x_1^+` and `x_1^-`, that means, `x = x_1^+ - x_1^-`</li>
-							</ul>
-						</p>
-						<p>
-							From section 4, solving <b>Example 1</b> <br/>
-							.....
-						</p>
-						<p>
-							$$max\; 0.14x_1 + 0.70x_2+ 0.3x_3+ 0.1x_4$$
-							$$x_1 \ge 0.55 (x_1 + x_2)$$
-							$$x_2 \le 0.75 ( x_1 + x_2 + x_3 + x_4)$$
-							$$0.14x_1 + 0.70x2+ 0.3x3+ 0.1x4 \le 0.15 * (x_1 + x_2 + x_3+ x_4)$$
-						</p>
+                        <h2>3rd Class (16/08)</h2>
+                        <p>
+                            Sections 5 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
+                            <b>FPI model</b> =>
+                            $$ max\quad c^T x $$
+                            $$s.t.\quad Ax=b$$
+                            $$x \ge 0 $$
+                            Simplex uses FPI, so, we want to know how to convert to it.<br/>
+                            Steps to convert:
+                            <ul>
+                                <li>`min` to `max` : multiply by `-1` objective function.</li>
+                                <li>`\le \ge` to `=` : add gap variables.</li>
+                                <li>if we have "free variables", split it into 2 variables
+                                    `x_1^+` and `x_1^-`, that means, `x = x_1^+ - x_1^-`</li>
+                            </ul>
+                        </p>
+                        <p>
+                            From section 4, solving <b>Example 1</b> <br/>
+                            .....
+                        </p>
+                        <p>
+                            $$max\; 0.14x_1 + 0.70x_2+ 0.3x_3+ 0.1x_4$$
+                            $$x_1 \ge 0.55 (x_1 + x_2)$$
+                            $$x_2 \le 0.75 ( x_1 + x_2 + x_3 + x_4)$$
+                            $$0.14x_1 + 0.70x2+ 0.3x3+ 0.1x4 \le 0.15 * (x_1 + x_2 + x_3+ x_4)$$
+                        </p>
+                        <h2>4th Class (21/08)</h2>
+                        <p>
+                            Sections 6 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
+                            Every LP has a solution? -> Draw restriction lines and check if have intersection. We don't need to look at objective function. <br/>
+                        </p>
+                        <p>
+
+                            {OpResearch.matrix([[1,2], [3,4]])}
+
+                        </p>
+
                     </div>
                 </div>
             </MathJax.Context>
