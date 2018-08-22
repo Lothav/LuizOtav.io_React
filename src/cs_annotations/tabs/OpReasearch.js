@@ -11,8 +11,40 @@ class OpResearch extends Component {
             lines.push(line.join(" & "));
         });
 
-        return '$$ \\begin{pmatrix} ' + lines.join("\\\\") + '\\end{pmatrix} $$';
+        return '\\begin{pmatrix} ' + lines.join("\\\\") + '\\end{pmatrix}';
     }
+
+    static linear_programming(obj_fn, conds) {
+
+        if (!Array.isArray(conds) || !Array.isArray(obj_fn)) {
+            console.log("linear_programming() ERR: Wrong types params [" + typeof conds + ", " + typeof obj_fn + "]");
+            return "";
+        }
+
+        let size = conds.length;
+
+        let lp = '$$max\\;(';
+        obj_fn.forEach(function(obj_fn_i, index) {
+            if(obj_fn_i !== 0) {
+                lp += (obj_fn_i > 0 ? ' +' : ' -') + obj_fn_i + 'x_' + index;
+            }
+        });
+        lp += ')$$';
+
+        conds.forEach(function (cond) {
+            lp += '$$';
+            for (let i = 0; i < size; i ++) {
+                if (cond[i] !== 0) {
+                    lp += (cond[i] > 0 ? " +" : " -") + cond[i] + + 'x_' + i;
+                }
+            }
+            lp +=  cond[size] + cond[size+1];
+            lp += '$$';
+        });
+
+        return lp;
+    }
+
     render() {
         return (
             <MathJax.Context>
@@ -106,13 +138,13 @@ class OpResearch extends Component {
                             $$x \ge 0 $$
                             Simplex uses FPI, so, we want to know how to convert to it.<br/>
                             Steps to convert:
-                            <ul>
-                                <li>`min` to `max` : multiply by `-1` objective function.</li>
-                                <li>`\le \ge` to `=` : add gap variables.</li>
-                                <li>if we have "free variables", split it into 2 variables
-                                    `x_1^+` and `x_1^-`, that means, `x = x_1^+ - x_1^-`</li>
-                            </ul>
                         </p>
+                        <ul>
+                            <li>`min` to `max` : multiply by `-1` objective function.</li>
+                            <li>`\le \ge` to `=` : add slack variables.</li>
+                            <li>if we have "free variables", split it into 2 variables
+                                `x_1^+` and `x_1^-`, that means, `x = x_1^+ - x_1^-`</li>
+                        </ul>
                         <p>
                             From section 4, solving <b>Example 1</b> <br/>
                             .....
@@ -129,11 +161,11 @@ class OpResearch extends Component {
                             Every LP has a solution? -> Draw restriction lines and check if have intersection. We don't need to look at objective function. <br/>
                         </p>
                         <p>
-
-                            {OpResearch.matrix([[1,2], [3,4]])}
-
+                            {'$$' + OpResearch.matrix([[1,2], [3,4]]) + '$$'}
                         </p>
-
+                        <p>
+                            {OpResearch.linear_programming([1,2,3], [[2,3,4,'<=', -3]])}
+                        </p>
                     </div>
                 </div>
             </MathJax.Context>
