@@ -193,7 +193,7 @@ class OpResearch extends Component {
                         </p>
                         <h2>4th Class (21/08)</h2>
                         <p>
-                            Sections 6 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
+                            Section 6 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
                             Every LP has a solution? -> Draw restriction lines and check if have intersection. We don't need to look at objective function. <br/>
                         </p>
                         <p>
@@ -209,6 +209,24 @@ class OpResearch extends Component {
                                 OpResearch.matrix([[1], [3], [2]]),
                             ], [true, false, true])}
                         </p>
+                        <h2>5th Class (23/08)</h2>
+                        Section 9 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
+                        Exercise 19: first line is the sum of the others <br/>
+                        <b>Matrix Ranking ('posto' in pt-br)</b>: min(linear independents lines, linear independents columns) <br/>
+                        Given an mxm matrix. If it ranking is equal m, then we have an unique solution! <br/>
+                        Exercise 20: this one is not so easy like the previous one <br/>
+                        { OpResearch.matrix([[1, 1, 1, 1, 1, 5], [2,1,0,-1,-2,0], [3,1,-1,-3,-5,-5]]) }
+                        Apply some operations:
+                        { OpResearch.matrix([[1, 1, 1, 1, 1, 5], [0,1,2,3,4,10], [0,2,4,6,8,20]]) }
+                        then we easily can check that one line is combination of others <br/>
+                        <b>Non-Singular Matrix: </b> Square matrix that has determinant nonzero an has complete ranking and has inverse. <br/>
+                        Exercise 21:
+
+                        { OpResearch.matrix([[1, 2, 1], [2,4,-1], [3,6,0]]) }
+                        We can remove third line (sum of the others) <br/>
+                        { OpResearch.matrix([[1, 2, 1], [2,4,-1]]) }
+
+                        <b>Cannonical LP</b>: Identity base and objective function eq 0 (above base coluns)
 
                     </div>
                     <div style={{ float:"left", clear: "both" }}

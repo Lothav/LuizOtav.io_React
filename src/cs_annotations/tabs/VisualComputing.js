@@ -49,7 +49,13 @@ class VisualComputing extends Component {
                         Transforming <br/>
                         Unidimensional O(n^2) <br/>
                         Bidimensional O(n^4) <br/>
-                        DCT -> used to JPG -> discard lower values! <br/>
+                        DCT (discret cossine transformation) -> used to JPG -> discard lower values! <br/>
+                        Fourier -> instead mod z = sqrt(a^2 + b^2) we can do mod z = log(1 + sqrt(a^2 + b^2)) <br/>
+                    </p>
+                    <p>
+                        Compression <br/>
+                        Go do frequency domain -> discard high frequencies -> apply entropy. <br/>
+                        Huffman coding -> binary tree -> more frequent near tree root. <br/>
                     </p>
 
                 </div>
