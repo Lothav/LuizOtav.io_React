@@ -140,6 +140,81 @@ class FinancialCosts extends Component {
                         32000.00 = 1.1250 x P <br/>
                         P = 28444.44
                     </p>
+                    <p>
+                        Em uma determinada data, uma pessoa aplica todo seu dinheiro em duas instuiçoes financeiras X e Y. <br/>
+                        Em X, aplica um capital, durante 8 meses, sob o regime de capitalizaçao simples a uma taxa de 9.6% a.a.
+                        e resgata todo o montante correspondente no final do periodo. <br/>
+                        Em Y, aplica o restante do seu dinheiro, durante 2 trimestres, sob o regime de capitalizaçao composto
+                        a uma taxa de 4% ao trimestre. <br/>
+                        Sabendo-se que o capital aplicado em Y supera em R$10,000 que foi aplicado em X. <br/>
+                        Se o valor dos juros da aplicaçao em Y, no final do periodo de aplicacao, foi igual a R$2,774.40,
+                        determine o montante resgatado pela aplicacao em X.
+                    </p>
+                    <p>
+                        Aplicacao em X: <br/>
+                        9.6% a.a. simples = 6.4% em 8 meses. <br/>
+                        M = 1.064 x C <br/>
+                        <br/>
+
+                        Aplicacao em Y: <br/>
+                        M = C x (1 + i)^n <br/>
+                        M = C x (1.04)^2 <br/>
+                        M = 1.0816 x C <br/>
+                        <br/>
+
+                        Cx + 10000 = Cy <br/>
+                        <br/>
+
+                        Jy = My - Cy <br/>
+                        Jy = (1.0816 x Cy) - Cy <br/>
+                        2774.40 = 0.0816 x Cy <br/>
+                        Cy = R$34000.00 <br/>
+                        <br/>
+
+                        Cx = R$24000.00 <br/>
+
+                        Mx = Cx x 1.064 <br/>
+                        Mx = 24000 x 1.064 <br/>
+                        Mx = R$25,536.00
+                    </p>
+                    <p>
+                        Uma pessoa depositou R$1,000.00 em um fundo que paga juros de 5% a.m., com o objetivo de dispor
+                        de R$1,102.50 dentro de 2 meses. Passados 24 dias apos a aplicacao, a taxa baixou para 4% a.m.. <br/>
+                        Quanto tempo adicional tera de esperar para obter o capital requerido?
+                    </p>
+                    <p>
+                        Simples (era composto lol) <br/>
+
+                        24 dias = 0.8 meses <br/>
+                        24 dias de 5% a.m = 4% <br/>
+                        1,000 x 1.04 = R$1040 <br/>
+                        Restante = 1102.50 - 1040.00 = 62.50 <br/>
+                        62.5 = 1,000 x 0.04 x n <br/>
+                        62.5 = 40 x n <br/>
+                        n = 1.5625 meses <br/>
+                        n = 46.875 ~ 47 dias
+                    </p>
+                    <p>
+                        Composto (agora certo hehe) <br/>
+                        24 dias = 0.8 meses <br/>
+                        24 dias de 5% a.m = 4% <br/>
+                        S = C x (1+i)^n <br/>
+                        S = 1000.00 x (1+0.05)^0.8 <br/>
+                        S = 1000.00 x 1.0398 <br/>
+                        S = R$1,039.80 <br/>
+                        <br/>
+                        1,102.50 = 1,039.80 x (1 + 0.04)^n <br/>
+                        1.06 = 1.04^n <br/>
+                        log(1.06) = log(1.04^n) <br/>
+                        0.0253 = 0.0170n <br/>
+                        n = 1.4882 -> 45 dias <br/>
+                        <br/>
+                        1ª aplicacao : 24 dias <br/>
+                        2 aplicacao: 45 dias <br/>
+                        prazo desejado : 60 dias <br/>
+                        24 + 45 - 60 = <b>9 dias</b>
+
+                    </p>
                 </div>
             </div>
         )
