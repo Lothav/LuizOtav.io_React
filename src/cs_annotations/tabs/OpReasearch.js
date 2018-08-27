@@ -186,6 +186,7 @@ class OpResearch extends Component {
                             .....
                         </p>
                         <p>
+                            From section 4, solving <b>Exercise 6</b> <br/>
                             $$max\; 0.14x_1 + 0.70x_2+ 0.3x_3+ 0.1x_4$$
                             $$x_1 \ge 0.55 (x_1 + x_2)$$
                             $$x_2 \le 0.75 ( x_1 + x_2 + x_3 + x_4)$$
@@ -195,19 +196,6 @@ class OpResearch extends Component {
                         <p>
                             Section 6 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
                             Every LP has a solution? -> Draw restriction lines and check if have intersection. We don't need to look at objective function. <br/>
-                        </p>
-                        <p>
-                            {'$$' + OpResearch.matrix([[1,2], [3,4]]) + '$$'}
-                        </p>
-                        <p>
-                            {OpResearch.linear_programming([1,2,3], [[2,3,4,'\\leq', -3], [-3,-31,42,'\\leq', -3]], [true, false , true])}
-                        </p>
-                        <p>
-                            {OpResearch.linear_programming([1,2,3], [
-                                OpResearch.matrix([[1,2,3], [1,2,3], [1,2,3]]),
-                                '\\leq',
-                                OpResearch.matrix([[1], [3], [2]]),
-                            ], [true, false, true])}
                         </p>
                         <h2>5th Class (23/08)</h2>
                         Section 9 from <a href="https://LuizOtav.io/files/POaula1-8.pdf">Lecture Notes</a>.<br/>
