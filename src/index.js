@@ -19,7 +19,7 @@ ReactDOM.render(
                 <Switch>
                     <Route path="/resume" component={Resume}/>
                     <Route path="/games" component={Games}/>
-                    <Route path="/cs_annotations" component={CSAnnotations}/>
+                    <Route path="/cs_ln" component={CSAnnotations}/>
                     <Route component={Home}/>
                 </Switch>
             </div>

@@ -56,6 +56,21 @@ class VisualComputing extends Component {
                         Compression <br/>
                         Go do frequency domain -> discard high frequencies -> apply entropy. <br/>
                         Huffman coding -> binary tree -> more frequent near tree root. <br/>
+                        Example Huffman Coding: <br/>
+                        <pre>
+                        {`
+                            1
+                        s2     .61
+                            s6     .30
+                                s1     .20
+                                    s4     .10
+                                        s5     s3`}
+                        </pre>
+                        <br/>
+                        Predictive Codification no Loss <br/>
+                        We cant predict future bits <br/>
+
+
                     </p>
 
                 </div>

@@ -12,7 +12,7 @@ class CSAnnotations extends Component {
             <div id="cs-ann-main">
                 <Tabs>
                     <div id="header">
-                        <h1>Computer Science Annotations</h1>
+                        <h1>Computer Science Lecture Notes</h1>
                         <nav id="menu">
                             <TabList >
                                 <Tab>Operational Research</Tab> |

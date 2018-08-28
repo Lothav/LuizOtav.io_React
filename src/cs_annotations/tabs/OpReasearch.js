@@ -216,6 +216,9 @@ class OpResearch extends Component {
 
                         <b>Cannonical LP</b>: Identity base and objective function eq 0 (above base coluns)
 
+                        <h2>5th ~ 6th Class (28/08)</h2>
+                        Simplex algorithm explained
+
                     </div>
                     <div style={{ float:"left", clear: "both" }}
                          ref={(el) => {
