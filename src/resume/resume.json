@@ -66,9 +66,9 @@
       "endDate": "2017-06-01",
       "summary": "",
       "highlights": [
-        "Platform features implementation",
+        "Feature implementation",
         "Automated testing",
-        "Code improvement."
+        "Code improvement"
       ]
     }
   ],
@@ -142,7 +142,8 @@
       "keywords": [
         "Vulkan",
         "OpenGL",
-        "GLSL"
+        "GLSL",
+        "PBR Algorithms"
       ]
     },
     {
