@@ -8,8 +8,6 @@
     "website": "https://LuizOtav.io",
     "summary": "Computer Science graduating and passionate about Computer Graphics, Math and Databases. Developing game engine on my spare time.",
     "location": {
-      "address": "131 - BL3 / Ap312 - Peçanha St",
-      "postalCode": "MG 30710-040",
       "city": "Belo Horizonte",
       "countryCode": "BR",
       "region": "Minas Gerais"
@@ -40,7 +38,7 @@
         "Task assign, code review, merge and deployment",
         "Define which frameworks and libs to use",
         "Database scale architecture and consistency responsible",
-        "Micro-services software architecture and design responsible"
+        "Microservices software architecture and design responsible"
       ]
     },
     {
@@ -51,11 +49,11 @@
       "endDate": "2018-01-01",
       "summary": "",
       "highlights": [
-	    "Micro-services development",
+	"Microservices development",
         "Develop and maintain Android and iOS Tracksale App",
         "Platform features implementation",
-	    "Reduce technical debt",
-	    "Intern supervision and code review"
+	"Reduce technical debt",
+	"Intern supervision and code review"
       ]
     },
     {
@@ -82,7 +80,7 @@
       "endDate": "2019-07-01",
       "gpa": "",
       "courses": [
-	    "Advanced Modern C++",
+	"Advanced Modern C++",
         "Advanced Computer Graphics",
         "Advanced Databases"
       ]
