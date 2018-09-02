@@ -20,6 +20,8 @@
 
 .navigation-box .navigation-item a {
     color: #fff;
+    border: none;
+    outline: 0;
     text-decoration: none;
     outline: 0;
 }

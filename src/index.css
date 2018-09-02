@@ -11,6 +11,7 @@ body {
 }
 
 .route-box {
+  overflow-x: hidden;
   padding-bottom: 30px;
   width: calc(100% - 80px);
   display: inline-block;
