@@ -213,7 +213,11 @@ class FinancialCosts extends Component {
                         2 aplicacao: 45 dias <br/>
                         prazo desejado : 60 dias <br/>
                         24 + 45 - 60 = <b>9 dias</b>
-
+                    </p>
+                    <p>
+                        <b>Compulsorio</b>
+                        <b>Open Market</b>
+                        <b>Redesconto</b>
                     </p>
                 </div>
             </div>
