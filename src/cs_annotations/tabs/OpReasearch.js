@@ -219,6 +219,9 @@ class OpResearch extends Component {
                         <h2>5th ~ 6th Class (28/08)</h2>
                         Simplex algorithm explained
 
+                        <p>
+                            Basic Solution: square sub matrix LI.
+                        </p>
                     </div>
                     <div style={{ float:"left", clear: "both" }}
                          ref={(el) => {

@@ -69,10 +69,23 @@ class VisualComputing extends Component {
                         <br/>
                         Predictive Codification no Loss <br/>
                         We cant predict future bits <br/>
-
-
                     </p>
-
+                    <p>
+                        1- Calcule o histograma para a imagem abaixo <br/>
+                        2- Aplique o filtro da mediana de tamanho 3x3 na imagem. <br/>
+                        3- Aplique o filtro da media de tamanho 3x3 na imagem. <br/>
+                        4- Discorra sobre as diferenças entre os resultados das questoes 2 e 3. <br/>
+                        5- Reduza a profundidade da imagem para 3bits (profundidade original: 8bits).
+                    </p>
+                    Imagem:
+                    <p>
+                        10  20  10  3  5
+                         3   5 255 11 23
+                         0  31  21 33 32
+                        31  12  23 34 34
+                        56 255  63 64 32
+                        55  21   0 21 11
+                    </p>
                 </div>
             </div>
         )
