@@ -1,6 +1,25 @@
+.game-type-title{
+    margin: 20px 0 0 20px;
+    font-family: "Eddie", sans-serif;
+    font-size: 30px;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+}
+
+hr{
+    background: #222;
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: 0px;
+    border-top: 1px solid #222;
+    margin: 1em 0;
+    padding: 0;
 }
 
 .game-box {
