@@ -5,6 +5,7 @@ import './Games.css'
 import coco_vs_paint from '../assets/imgs/coco_vs_paint_gif.gif'
 import breakout from '../assets/imgs/breakout_gif.gif'
 import adler from '../assets/imgs/adler_gif.gif'
+import cowbive from '../assets/imgs/cowbive_gif.gif'
 import lost_robot from '../assets/imgs/lost_robot_gif.gif'
 
 class Games extends Component {
@@ -50,7 +51,6 @@ class Games extends Component {
                             </div>
                         </a>
                     </div>
-
                     <div className="game-box">
                         <a href="https://github.com/Luiz0tavio/coco_vs_paint">
                             <div className="game-box-image">
@@ -62,9 +62,18 @@ class Games extends Component {
                             </div>
                         </a>
                     </div>
+                    <div className="game-box">
+                        <a href="https://github.com/Luiz0tavio/Cowbive">
+                            <div className="game-box-image">
+                                <span className="helper" />
+                                <img className="game-gif" src={cowbive} alt="loading..."/>
+                            </div>
+                            <div className="game-box-title">
+                                <span className="game-title">Cowbive</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-
-
             </div>
         )
     }
