@@ -41,7 +41,7 @@ class Games extends Component {
                 <div className="game-type-title">Browser</div>
                 <div className="wrapper">
                     <div className="game-box">
-                        <a href="https://github.com/Luiz0tavio/adler">
+                        <a href="https://LuizOtav.io/adler">
                             <div className="game-box-image">
                                 <span className="helper" />
                                 <img className="game-gif" src={adler} alt="loading..."/>
@@ -52,7 +52,7 @@ class Games extends Component {
                         </a>
                     </div>
                     <div className="game-box">
-                        <a href="https://github.com/Luiz0tavio/coco_vs_paint">
+                        <a href="https://LuizOtav.io/coco_vs_paint">
                             <div className="game-box-image">
                                 <span className="helper" />
                                 <img className="game-gif" src={coco_vs_paint} alt="loading..."/>
@@ -63,7 +63,7 @@ class Games extends Component {
                         </a>
                     </div>
                     <div className="game-box">
-                        <a href="https://github.com/Luiz0tavio/Cowbive">
+                        <a href="https://LuizOtav.io/cowbive">
                             <div className="game-box-image">
                                 <span className="helper" />
                                 <img className="game-gif" src={cowbive} alt="loading..."/>
