@@ -219,6 +219,20 @@ class FinancialCosts extends Component {
                         <b>Open Market</b>
                         <b>Redesconto</b>
                     </p>
+                    <p>
+                        Work: <br/>
+                        20 fuckin points <br/>
+                        Tema: Sistemas de Amortizaçao <br/>
+                        Formato: Estudo de Caso <br/>
+                        Aquisiçao de imovel no valor de 500mil <br/>
+                        Financas: 350mil (150mil entrada) <br/>
+                        <ul>
+                            <li>SAC</li>
+                            <li>PRICE</li>
+                            <li>SAM</li>
+                        </ul>
+                        Prazo: 2400 meses (2 anos)
+                    </p>
                 </div>
             </div>
         )
