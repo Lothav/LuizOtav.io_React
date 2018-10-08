@@ -231,7 +231,10 @@ class FinancialCosts extends Component {
                             <li>PRICE</li>
                             <li>SAM</li>
                         </ul>
-                        Prazo: 2400 meses (2 anos)
+                        Prazo: 2400 meses (20 anos)
+                    </p>
+                    <p>
+                        Montar uma apresentaçao sao os parametros, conceitos a taxas equivalentes. (taxa over, efetiva, nominal)
                     </p>
                 </div>
             </div>
