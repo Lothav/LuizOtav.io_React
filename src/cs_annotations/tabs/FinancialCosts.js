@@ -236,6 +236,20 @@ class FinancialCosts extends Component {
                     <p>
                         Montar uma apresenta√ßao sao os parametros, conceitos a taxas equivalentes. (taxa over, efetiva, nominal)
                     </p>
+		   	<p>
+				Trabalho (20 pontos): <br/>
+				WACC - custo medio ponderado de capital <br/>
+				Capital proprio vs capital terceiros <br/>
+				Preparar apresentacao: <br/>
+				O que e? <br/>
+				Pra que serve? <br/>
+				Como √ calculado? <br/>
+				Data: Quarta (31/10) <br/>
+				(adiantar uma parte da materia)
+			</p>
+			<p>
+				Nao tera aula segunda nem quarta (22 e 24).
+			</p>
                 </div>
             </div>
         )
