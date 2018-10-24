@@ -243,7 +243,7 @@ class FinancialCosts extends Component {
 				Preparar apresentacao: <br/>
 				O que e? <br/>
 				Pra que serve? <br/>
-				Como Ã calculado? <br/>
+				Como e calculado? <br/>
 				Data: Quarta (31/10) <br/>
 				(adiantar uma parte da materia)
 			</p>

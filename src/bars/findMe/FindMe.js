@@ -73,7 +73,7 @@ class FindMe extends Component {
                             </a>
                         </div>
                         <div className="animated bounceInDown" style={{display: this.state.social[3]}}>
-                            <a href="https://github.com/Luiz0tavio">
+                            <a href="https://github.com/Lothav">
                                 <img alt="github" src={github} />
                             </a>
                         </div>
