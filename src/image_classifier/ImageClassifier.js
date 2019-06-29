@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import { Container, Row, Col, Image, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Image, Form, Dropdown, Button } from 'react-bootstrap';
 
 const BASE_URL = 'https://luizotavioapi.herokuapp.com/';
 //const BASE_URL = 'http://localhost:5000/';
@@ -14,6 +14,7 @@ class ImageClassifier extends Component {
         this.state = {
             images: [],
             message: '',
+            method: "color",
             isLoading: false,
             classified_imgs: [],
         }
@@ -33,15 +34,15 @@ class ImageClassifier extends Component {
         const uploaders = this.state.images.map(image => {
             const data = new FormData();
             data.append("image", image, image.name);
-
+            this.setState({ message : "Uploading images and running classifier..." });
             // Make an AJAX upload request using Axios
-            return axios.post(BASE_URL + 'upload', data)
+            return axios.post(BASE_URL + 'upload?method=' + this.state.method, data)
                 .then(response => {
                     if(response.data != null){
                         this.setState({ classified_imgs: [ response.data, ...this.state.classified_imgs ] });
                     }
-                    this.setState({ isLoading: false });
                     this.setState({ message : "Success!" });
+                    this.setState({ isLoading: false });
                 }, 	(error) => {
                     this.setState({ message : "Error! " + error });
                     this.setState({ isLoading: false });
@@ -50,7 +51,6 @@ class ImageClassifier extends Component {
 
         // Once all the files are uploaded
         axios.all(uploaders).then(() => {
-            this.setState({ message : "Images uploaded! Running classifier..." });
         }).catch(err => {
             this.setState({ message : "Error! " + err.message });
             alert(err.message)}
@@ -66,11 +66,23 @@ class ImageClassifier extends Component {
                 </div>
                 <hr/>
                 <Row>
-                    <Col>
+                    <Col xs={6}>
                         <Form.Control type="file" onChange={this.selectImages} multiple />
                         <span className="text-info">{this.state.message}</span>
                     </Col>
-                    <Col>
+                    <Col xs={3}>
+                        <Dropdown>
+                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                Use '{this.state.method}' method
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu>
+                                <Dropdown.Item onSelect={() => this.setState({method : "color"})}>Use 'color' method</Dropdown.Item>
+                                <Dropdown.Item onSelect={() => this.setState({method : "lbp"})}>Use 'lbp' method</Dropdown.Item>
+                                <Dropdown.Item onSelect={() => this.setState({method : "glcm"})}>Use 'glcm' method</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
+                    </Col>
+                    <Col xs={3}>
                         <Button
                             variant="secondary" value="Submit"
                             disabled={this.state.isLoading}
@@ -83,7 +95,6 @@ class ImageClassifier extends Component {
                 </Row>
                 {
                     this.state.classified_imgs.map((data, i) => {
-                        console.log(BASE_URL + data.imageUrl);
                         return ((i + 1) % 2 === 0 ?
                                 (<Row className="align-items-center" key={i}>
                                     <Col xs={12} sm={6} lg={3} className="col-classified">
