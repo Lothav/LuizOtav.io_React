@@ -41,13 +41,20 @@ class ImageClassifier extends Component {
                         this.setState({ classified_imgs: [ response.data, ...this.state.classified_imgs ] });
                     }
                     this.setState({ isLoading: false });
+                    this.setState({ message : "Success!" });
+                }, 	(error) => {
+                    this.setState({ message : "Error! " + error });
+                    this.setState({ isLoading: false });
                 })
         });
 
         // Once all the files are uploaded
         axios.all(uploaders).then(() => {
-            console.log('done');
-        }).catch(err => alert(err.message));
+            this.setState({ message : "Images uploaded! Running classifier..." });
+        }).catch(err => {
+            this.setState({ message : "Error! " + err.message });
+            alert(err.message)}
+        );
     };
     render() {
         return (
