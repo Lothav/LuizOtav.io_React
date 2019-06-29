@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import { Container, Row, Col, Image, Form, Button } from 'react-bootstrap';
 
-const BASE_URL = 'http://luizotavioapi.herokuapp.com/';
+const BASE_URL = 'https://luizotavioapi.herokuapp.com/';
 //const BASE_URL = 'http://localhost:5000/';
 
 import './ImageClassifier.css';
