@@ -8,6 +8,7 @@ import Home from './home/Home';
 import Games from './games/Games';
 import Resume from './resume/Resume';
 import CSAnnotations from "./cs_annotations/CSAnnotations";
+import ImageClassifier from "./image_classifier/ImageClassifier"
 
 import './index.css';
 
@@ -20,6 +21,7 @@ ReactDOM.render(
                     <Route path="/resume" component={Resume}/>
                     <Route path="/games" component={Games}/>
                     <Route path="/cs_ln" component={CSAnnotations}/>
+                    <Route path="/image_classifier" component={ImageClassifier}/>
                     <Route component={Home}/>
                 </Switch>
             </div>

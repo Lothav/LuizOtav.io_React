@@ -1,0 +1,17 @@
+
+.ImageClassifier-container {
+    color: white;
+}
+.ImageClassifier-container .classified-img {
+    width: 100%;
+}
+
+.ImageClassifier-container .col-classified {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ImageClassifier-container .title-container {
+    margin-top: 30px;
+    font-size: 15px;
+}
