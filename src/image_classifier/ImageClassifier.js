@@ -49,12 +49,11 @@ class ImageClassifier extends Component {
             console.log('done');
         }).catch(err => alert(err.message));
     };
-
     render() {
         return (
             <Container className="ImageClassifier-container">
                 <div className="title-container">
-                    <h1>Image Classifier</h1><hr/>
+                    <h1>Python Image Classifier</h1><hr/>
                     <div><a href="https://github.com/ronaldpereira">Ronald Pereira</a> (ronald.drp11@gmail.com)</div>
                     <div><a href="https://github.com/Lothav">Luiz Otavio</a> (me@luizotav.io)</div>
                 </div>
