@@ -68,7 +68,7 @@ class FindMe extends Component {
                             </a>
                         </div>
                         <div className="animated bounceInDown" style={{display: this.state.social[2]}}>
-                            <a href="http://us.battle.net/wow/en/character/nemesis/Othav/simple">
+                            <a href="http://us.battle.net/wow/en/character/nemesis/Lothav/simple">
                                 <img alt="wow" src={wow} />
                             </a>
                         </div>
