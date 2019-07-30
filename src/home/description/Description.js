@@ -45,7 +45,7 @@ class Description extends Component {
                             <i className="fa fa-desktop faa-bounce" />
                         </div>
                         <div className="icon-box-label">
-                            Computer Graphics enthusiast
+                            Graphics Engineer at <a href={"https://tfgco.com"}>TFG Co</a>
                         </div>
                     </div>
                     <div className="icon-box-out">
@@ -54,7 +54,7 @@ class Description extends Component {
                         </div>
                         <div className="icon-box-label">
                             <Typist>
-                                std::cout &lt;&lt; "C++ guy" &lt;&lt; std::endl;
+                                std::cout &lt;&lt; "C++ plumber" &lt;&lt; std::endl;
                             </Typist>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ class Description extends Component {
                             <i className="fa fa-graduation-cap faa-tada" />
                         </div>
                         <div className="icon-box-label">
-                            Computer Science Undergrad
+                            Bsc Computer Science
                         </div>
                     </div>
                     <div className="icon-box-out">
@@ -71,7 +71,7 @@ class Description extends Component {
                             <i className="fa fa-map-marker float" />
                         </div>
                         <div className="icon-box-label">
-                            Belo Horizonte/MG - Brazil
+                            Sao Paulo/SP - Brazil
                         </div>
                     </div>
                 </div>

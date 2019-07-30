@@ -5,6 +5,12 @@
 
 .description-box{
     margin-top: 5vh;
+    color: white;
+}
+
+.icon-box-label a {
+    color: white;
+    text-decoration: underline;
 }
 
 @media(max-width: 1423px) and (min-width: 1200px){
